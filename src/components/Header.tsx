@@ -1,16 +1,16 @@
 import { useState } from "react";
-import { Menu, X, Home, } from "lucide-react";
+import { Menu, X, Home, Briefcase, Info, Phone } from "lucide-react";
 import logo from "../assets/TECNOLOGIA.svg";
 import "../App.css";
 
-const Navbar = () => {
+const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => {
     setIsOpen(prev => !prev);
   };
 
   return (
-    <div className="Nav fixed flex justify-between items-center px-6 py-3 mx-auto mt-10 rounded-full shadow-lg max-w-5xl transition-colors duration-300 border-2 pb-10 z-50 top-0">
+    <div className="Nav rounded-full ">
       {/* Logo */}
       <img
         src={logo}
@@ -43,14 +43,24 @@ const Navbar = () => {
       {isOpen && (
         <div className="mobile-nav $ {isOpen ? `slide-in` : `slide-out`} absolute top-0 left-0 w-full flex flex-col p-4 gap-4 mt-2 md:hidden text-gray-50">
 
-            <a href="#" className="transition-all duration-300 flex gap-2"> <Home className="w-5 h-5 animate-none" id="home"/> Home</a>
-            <a href="#" className="transition-all duration-300 flex gap-2"> <Home className="w-5 h-5" id="home"/> About</a>
-            <a href="#" className="transition-all duration-300 flex gap-2"> <Home className="w-5 h-5" id="home"/> Project</a>
-            <a href="#" className="transition-all duration-300 flex gap-2"> <Home className="w-5 h-5" id="home"/> Services</a>            
-            {/* Mobile Contact */}
-            <div className="DLMode flex items-center px-2 py-1 rounded-full transition-all duration-300 text-sm font-medium bg-blue-500 hover:bg-blue-600 border-0">
-            <a href="#" className=" text-white">Contact Us</a>
-            </div>
+           <a href="#" className="flex items-center gap-2">
+            <Home className="w-5 h-5" /> Home
+          </a>
+          <a href="#" className="flex items-center gap-2">
+            <Info className="w-5 h-5" /> About
+          </a>
+          <a href="#" className="flex items-center gap-2">
+            <Briefcase className="w-5 h-5" /> Project
+          </a>
+          <a href="#" className="flex items-center gap-2">
+            <Phone className="w-5 h-5" /> Services
+          </a>
+          <a
+            href="#"
+            className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-full text-center transition"
+          >
+            Contact Us
+          </a>
 
         </div>
       )}
@@ -58,4 +68,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Header;

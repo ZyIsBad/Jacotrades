@@ -1,9 +1,9 @@
-import Main from './components/Main';
+import Header from "./components/Header";
 
 function App() {
   return (
     <div className="min-h-screen bg-black flex flex-col items-center">
-      <Main/>
+      <Header/>
     </div>
   );
 }
