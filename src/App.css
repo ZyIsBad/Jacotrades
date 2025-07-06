@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--Heading1), sans-serif;
+}
+
+body, p, span, a {
+  font-family: var(--Body), sans-serif;
+}
+:root {
+    --blue: blue;
+    --indigo: indigo;
+    --red: red;
+    --white: #f3f3f3;
+    --deepGray: #181f20;
+  --Heading1: "Poppins", sans-serif;
+  --Body: "Roboto", sans-serif;
+}
+*{
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+.Nav {
+    padding: 5px 10px 5px 0px;
+    width: 100%;
+    max-width: 50rem;
+    background: transparent;
+    backdrop-filter: blur(5px);
+    border: grey 0.1px solid;
+    margin: 1rem auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    animation: slideIn 2s;
+}
+@keyframes slideIn {
+    0% {transform: translateY(-100%);}
+    100% {transform: translateY(1%);}
+}
+.DLMode {
+    padding: 10px;
+    gap: 1rem;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+    transition: all 1s;
+    background-color: var(--blue);
+    font-family: var(--Heading1);
+}
+.DLMode a{
+  background-color: var(--blue);
+  text-decoration: none;
+  transition: all 1s;
+}
+.DLMode a:hover{
+     transform: translateY(-2px);
+}
+.navlinks a {
+    text-decoration: none;
+    color: grey;
+    transition: all 1s;    
+}
+.navlinks a:hover{
+    color: var(--white);
+    transform: translateY(-2px);
+}
+#home {
+  color: var(--white);
+  animation: none;
+}
+@media (max-width: 800px) {
+    .Nav {
+        position: fixed;
+        width: 100%;
+        max-width: 100%;
+        border: none;
+        box-shadow: none;
+        backdrop-filter: blur(5px);
+        z-index: 1000;
+        border-radius: 0%;
+    }
+    .mobile-nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 40%;
+        padding: 15px;
+        height: 50rem;
+        backdrop-filter: blur(5px);
+        transition: all 5s;   
+        background-color: var(--deepGray);
+        animation: slideIn 1s; 
+    }
+    @keyframes slideIn {
+     0% {transform: translateX(-100%);}
+    100% {transform: translateX(0);}
+    }
+    .mobile-nav ::before {
+        color: black;
+    }
+    .mobile-nav :hover {
+        transform: translateY(-5px);
+    }
+}
