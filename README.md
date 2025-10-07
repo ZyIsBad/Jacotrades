@@ -1,69 +1,51 @@
-# React + TypeScript + Vite
+# 🧠 JAC O' Trades — Software Startup Company Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the official repository of **JAC O' Trades**, a modern software startup and freelancing company specializing in delivering **innovative web solutions**, **custom software**, and **creative digital experiences**.
 
-Currently, two official plugins are available:
+This repository contains the source code for our **company website**, showcasing our services, portfolio, and mission to help businesses go digital.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🌐 Live Demo
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+🚀 **Website:** [https://jacotrades.com](https://jacotrades.com) _(Replace with your actual domain once live)_
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 🏢 About JAC O' Trades
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+At **JAC O' Trades**, we believe that technology should **empower** ideas, not complicate them.  
+We’re a team of passionate developers and designers offering **end-to-end software development**, **freelance tech services**, and **custom web applications** tailored to client needs.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+**Our specialties include:**
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- 🌍 Web & Mobile App Development
+- 💼 Business & Freelance Software Solutions
+- 🎨 UI/UX Design & Branding
+- ⚙️ API Integration & Automation
+- ☁️ Cloud Deployment & Maintenance
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+## 🖥️ Tech Stack
+
+This website is built using modern, responsive, and scalable technologies:
+
+| Layer                  | Technology Used                                              |
+| ---------------------- | ------------------------------------------------------------ |
+| **Frontend**           | HTML5, CSS3, JavaScript, Bootstrap                           |
+| **Backend (optional)** | Node.js / Express _(if applicable)_                          |
+| **Hosting**            | Hostinger / Render / Vercel _(depending on your deployment)_ |
+| **Version Control**    | Git & GitHub                                                 |
+| **Design Tools**       | Figma / Canva                                                |
+
+---
+
+## 🚀 Features
+
+- Responsive and mobile-friendly design
+- Interactive portfolio section with lightbox animation
+- Smooth scroll and custom transitions
+- Contact form integration
+- SEO-optimized meta structure
+- Fast-loading assets and CDN-based resources
