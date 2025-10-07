@@ -31,13 +31,13 @@ We’re a team of passionate developers and designers offering **end-to-end soft
 
 This website is built using modern, responsive, and scalable technologies:
 
-| Layer                  | Technology Used                                              |
-| ---------------------- | ------------------------------------------------------------ |
-| **Frontend**           | HTML5, CSS3, JavaScript, Bootstrap                           |
-| **Backend (optional)** | Node.js / Express _(if applicable)_                          |
-| **Hosting**            | Hostinger / Render / Vercel _(depending on your deployment)_ |
-| **Version Control**    | Git & GitHub                                                 |
-| **Design Tools**       | Figma / Canva                                                |
+| Layer               | Technology Used                                  |
+| ------------------- | ------------------------------------------------ |
+| **Frontend**        | HTML5, CSS3, JavaScript, TypeScript, TailwindCSS |
+| **Backend**         | Node.js / Express                                |
+| **Hosting**         | Vercel                                           |
+| **Version Control** | Git & GitHub                                     |
+| **Design Tools**    | Figma / Canva                                    |
 
 ---
 
