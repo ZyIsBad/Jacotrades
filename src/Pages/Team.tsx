@@ -12,8 +12,8 @@ const Team = () => {
       subtitle: "Fullstack Developer",
       subtitletwo: "Cloud Developer",
       handle: "@jericjavier",
-      borderColor: "#030406",
-      gradient: "linear-gradient(180deg, #3B82F6, #000)",
+      borderColor: "#6083fd",
+      gradient: "linear-gradient(180deg, #6083fd, #000)",
       url: "https://linkedin.com/in/mikechen"
     },
     {
@@ -22,8 +22,8 @@ const Team = () => {
       subtitle: "Graphic Designer",
       subtitletwo: "UI/UX Designer",
       handle: "@justineley",
-      borderColor: "#030406",
-      gradient: "linear-gradient(145deg, #4b0082, #000)",
+      borderColor: "#6083fd",
+      gradient: "linear-gradient(180deg, #6083fd, #000)",
       url: "https://github.com/sarahjohnson"
     },
     {
@@ -32,8 +32,8 @@ const Team = () => {
       subtitle: "Frontend Developer",
       subtitletwo: "Game Developer",
       handle: "@zos",
-      borderColor: "#030406",
-      gradient: "linear-gradient(180deg, #800000, #000)",
+      borderColor: "#6083fd",
+      gradient: "linear-gradient(180deg, #6083fd, #000)",
       url: "https://linkedin.com/in/mikechen"
     }
   ];

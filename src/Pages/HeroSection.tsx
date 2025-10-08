@@ -9,8 +9,8 @@ const HeroSection = () => {
         speed={0.5}
         squareSize={40}
         direction="diagonal"
-        borderColor="#182b31"
-        hoverFillColor="#1e3a46"
+        borderColor="#181f20"
+        hoverFillColor="#6083fd"
         className="absolute inset-0 w-full h-full z-10"
       />
 
