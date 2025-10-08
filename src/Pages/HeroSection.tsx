@@ -11,7 +11,7 @@ const HeroSection = () => {
         direction="diagonal"
         borderColor="#182b31"
         hoverFillColor="#1e3a46"
-        className="absolute inset-0 w-full h-full -z-10"
+        className="absolute inset-0 w-full h-full z-10"
       />
 
       {/* 🔹 Dark overlay */}
@@ -19,11 +19,11 @@ const HeroSection = () => {
 
       {/* 🔹 Foreground content */}
       <div className="relative z-10 container mx-auto px-6 flex flex-col justify-center h-full md:flex-row items-center text-center md:text-left gap-8">
-        <div className="md:w-1/2">
+        <div className="md:w-1/2 z-10">
           <span className="uppercase text-gray-400 tracking-wider text-sm">
             SubHeadline
           </span>
-          <h1 className="text-4xl md:text-5xl font-bold mt-2 mb-4 leading-tight">
+          <h1 className="text-4xl md:text-5xl font-bold mt-2 mb-4 leading-tight ">
             Enter Your <span className="text-[#6083fd]">Headline Here</span>
           </h1>
           <p className="text-gray-400 text-base md:text-lg leading-relaxed">
