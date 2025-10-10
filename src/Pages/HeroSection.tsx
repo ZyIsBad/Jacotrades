@@ -21,14 +21,15 @@ const HeroSection = () => {
       <div className="relative z-10 container mx-auto px-6 flex flex-col justify-center h-full md:flex-row items-center text-center md:text-left gap-8">
         <div className="md:w-1/2 z-10">
           <span className="uppercase text-gray-400 tracking-wider text-sm">
-            SubHeadline
+            WELCOME TO JAC O' TRADES
+          </span>
+          <span className="block text-gray-400 text-sm mb-2">
           </span>
           <h1 className="text-4xl md:text-5xl font-bold mt-2 mb-4 leading-tight ">
-            Enter Your <span className="text-[#6083fd]">Headline Here</span>
+            LOOKING FOR FUTURISTIC WEBSITES?<span className="text-[#6083fd]">COME TO US!</span>
           </h1>
           <p className="text-gray-400 text-base md:text-lg leading-relaxed">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eos ea,
-            cum quae facilis optio impedit tempora aliquam at eveniet?
+            We specialize in creating modern, responsive, and user-friendly websites that stand out. Whether you need a personal blog, a business site, or an e-commerce platform, we've got you covered.
           </p>
           {/* <div className="mt-6">
             <a
