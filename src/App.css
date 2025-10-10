@@ -184,7 +184,17 @@ section {
 .About-h3 {
   margin: 1rem 0px;
 }
+.contactfill {
+  padding: 14px;
+  margin: 20px 0px;
 
+}
+
+.info {
+  padding: 50px;
+  max-width: 100rem;
+  justify-items: center;
+}
 /* @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);

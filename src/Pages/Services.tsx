@@ -3,37 +3,37 @@ import SpotlightCard from "../components/SpotlightCard";
 
 const services = [
   {
-    icon: <FaCode className="text-5xl text-[#9B5DE5] mb-4" />,
+    icon: <FaCode className="text-5xl mb-4" />,
     title: "Custom Software Development",
     description:
       "We build tailored software solutions that streamline processes and enhance productivity for your business.",
   },
   {
-    icon: <FaMobileAlt className="text-5xl text-[#9B5DE5] mb-4" />,
+    icon: <FaMobileAlt className="text-5xl  mb-4" />,
     title: "Web & Mobile App Development",
     description:
       "Our team creates responsive, high-performance web and mobile applications with seamless user experiences.",
   },
   {
-    icon: <FaPalette className="text-5xl text-[#9B5DE5] mb-4" />,
+    icon: <FaPalette className="text-5xl  mb-4" />,
     title: "UI/UX Design",
     description:
       "We design intuitive and visually stunning interfaces that align with your brand and engage your users.",
   },
   {
-    icon: <FaServer className="text-5xl text-[#9B5DE5] mb-4" />,
+    icon: <FaServer className="text-5xl  mb-4" />,
     title: "API Integration & Backend Systems",
     description:
       "We develop robust backend systems and integrate APIs to ensure smooth data flow and scalability.",
   },
   {
-    icon: <FaTools className="text-5xl text-[#9B5DE5] mb-4" />,
+    icon: <FaTools className="text-5xl  mb-4" />,
     title: "Maintenance & Support",
     description:
       "We provide continuous monitoring, optimization, and technical support for your digital platforms.",
   },
   {
-    icon: <FaLightbulb className="text-5xl text-[#9B5DE5] mb-4" />,
+    icon: <FaLightbulb className="text-5xl  mb-4" />,
     title: "IT Consultation & Digital Strategy",
     description:
       "We guide businesses through digital transformation with smart strategies and technology consulting.",

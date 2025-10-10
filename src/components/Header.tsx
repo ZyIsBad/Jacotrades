@@ -19,7 +19,8 @@ const Header = () => {
       />
       {/* Desktop Nav */}
       <div className="navlinks hidden md:flex gap-6 items-center text-sm font-medium">
-        <Home className="w-5 h-5 animate-none" id="home" />
+        {/* <Home className="w-5 h-5 animate-none" id="home" /> */}
+        <a href="#" className="hover:underline text-black">Home</a>
         <a href="#" className="hover:underline text-black">About</a>
         <a href="#" className="hover:underline text-black">Project</a>
         <a href="#" className="hover:underline">Services</a>
