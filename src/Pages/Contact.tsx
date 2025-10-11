@@ -16,7 +16,7 @@ const Contact = () => {
         </div>
 
         {/* RIGHT SIDE — Contact Form */}
-        <div className="bg-gray-900 rounded-xl p-8 text-gray-900 shadow-lg space-y-6">
+        <div className="bg-none rounded-xl p-8 text-gray-900 shadow-lg space-y-6">
           <input
             type="text"
             placeholder="Your Name"
