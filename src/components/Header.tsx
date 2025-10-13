@@ -10,7 +10,7 @@ const Header = () => {
   };
 
   return (
-    <div className="Nav rounded-full fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-[90%] max-w-7xl bg-white/90 backdrop-blur-md shadow-md flex items-center justify-between px-6 py-3">
+    <div className="Nav rounded-2xl fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-[90%] max-w-7xl bg-white/90 backdrop-blur-md shadow-md flex items-center justify-between px-6 py-3">
       {/* Logo */}
       <img
         src={logo}
@@ -57,7 +57,7 @@ const Header = () => {
           </a>
           <a
             href="#"
-            className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-full text-center transition"
+            className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-2xl text-center transition"
           >
             Contact Us
           </a>

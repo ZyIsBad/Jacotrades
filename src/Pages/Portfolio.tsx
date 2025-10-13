@@ -12,7 +12,7 @@ const Portfolio = () => {
           Project showcase, case studies, client work, and achievements gallery.
         </p>
       </div>
-
+      
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mx-auto px-6 align-center">
         {/* Card 1 */}
         <div className="bg-[#120a1d] rounded-2xl shadow-lg p-6 hover:scale-105 transition-transform duration-300">
