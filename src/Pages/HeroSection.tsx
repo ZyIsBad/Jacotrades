@@ -3,7 +3,7 @@ import Squares from "../components/Squares";
 
 const HeroSection = () => {
   return (
-    <section className="relative w-full h-screen overflow-hidden flex items-center justify-center">
+    <section id="home" className="relative w-full h-screen overflow-hidden flex items-center justify-center">
       {/* 🔹 Animated background */}
       <Squares
         speed={0.5}
