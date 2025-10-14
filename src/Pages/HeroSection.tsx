@@ -88,7 +88,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="bg-black relative w-full h-screen overflow-hidden flex items-center justify-center">
+    <section id="home" className="bg-black relative w-full h-screen overflow-hidden flex items-center justify-center">
 
       <canvas
         ref={canvasRef}
