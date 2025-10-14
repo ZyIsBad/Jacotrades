@@ -3,7 +3,7 @@ import image from "../assets/IMAGE.png";
 const Portfolio = () => {
   return (
     <section
-      id="portfolio"
+      id="projects"
       className="section py-20 bg-[#030406] text-white text-center"
     >
       <div className="mb-10 items-center text-center">
