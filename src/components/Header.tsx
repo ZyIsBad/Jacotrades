@@ -1,16 +1,16 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Menu, X, Home, Briefcase, Info, Phone } from "lucide-react";
 import logo from "../assets/JAC.png";
 import "../App.css";
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => {
-    setIsOpen((prev: boolean) => !prev);
+    setIsOpen(prev => !prev);
   };
 
   return (
-    <div className="Nav rounded-2xl fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-[90%] max-w-7xl bg-white/90 backdrop-blur-md shadow-md flex items-center justify-between px-6 py-3">
+    <div className="Nav rounded-2xl fixed left-1/2 transform -translate-x-1/2 z-50 w-[90%] max-w-7xl bg-white/90 backdrop-blur-md shadow-md flex items-center justify-between px-6 py-3">
       {/* Logo */}
       <a href="#home">
         <img
@@ -44,7 +44,7 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className={`mobile-nav ${isOpen ? 'slide-in' : 'slide-out'} absolute top-0 left-0 w-full flex flex-col p-4 gap-4 mt-2 md:hidden text-gray-50`}>
+        <div className="mobile-nav $ {isOpen ? `slide-in` : `slide-out`} absolute top-0  w-full flex flex-col p-4 gap-4 mt-2 md:hidden text-gray-50">
 
           <a href="#home" className="flex items-center gap-2">
             <Home className="w-5 h-5" /> Home

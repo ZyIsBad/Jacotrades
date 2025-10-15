@@ -72,17 +72,15 @@ body, p, span, a {
 }
 .Nav {
     padding: 5px 10px 5px 20px;
-    width: 100%;
     max-width: 70rem;
     background: transparent;
     backdrop-filter: blur(5px);
-    border: #181f20 0.1px solid;
+    border: none;
     margin: 1rem auto;
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
     animation: slideIn 2s;
 }
 @keyframes slideIn {
@@ -133,7 +131,7 @@ body, p, span, a {
     .mobile-nav {
         position: absolute;
         top: 100%;
-        left: 0;
+        right: 0;
         width: 40%;
         padding: 15px;
         height: 100vh;
@@ -143,14 +141,14 @@ body, p, span, a {
         animation: slideIn 1s; 
     }
     @keyframes slideIn {
-     0% {transform: translateX(-100%);}
-    100% {transform: translateX(0);}
+     0% {transform: translateX(100%);}
+    -100% {transform: translateX(0);}
     }
     .mobile-nav ::before {
         color: black;
     }
     .mobile-nav :hover {
-        transform: translateY(-5px);
+        transform: translateY(-2px);
     }
 }
 section {
@@ -276,3 +274,38 @@ section {
     @apply bg-background text-foreground;
   }
 } */
+
+/* Futuristic Nav Link Hover */
+.nav-link {
+  position: relative;
+  transition: color 0.3s ease;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, #00ffc8, #00b4ff);
+  transition: width 0.3s ease;
+}
+.nav-link:hover {
+  color: #00ffc8;
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Mobile Nav Link Hover */
+.mobile-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.3s ease, transform 0.2s;
+}
+.mobile-link:hover {
+  color: #00ffc8;
+  transform: translateX(5px);
+}
+
