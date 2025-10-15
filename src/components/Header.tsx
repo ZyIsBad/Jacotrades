@@ -1,12 +1,12 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { Menu, X, Home, Briefcase, Info, Phone } from "lucide-react";
 import logo from "../assets/JAC.png";
 import "../App.css";
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
   const toggleMenu = () => {
-    setIsOpen(prev => !prev);
+    setIsOpen((prev: boolean) => !prev);
   };
 
   return (
@@ -44,7 +44,7 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="mobile-nav $ {isOpen ? `slide-in` : `slide-out`} absolute top-0 left-0 w-full flex flex-col p-4 gap-4 mt-2 md:hidden text-gray-50">
+        <div className={`mobile-nav ${isOpen ? 'slide-in' : 'slide-out'} absolute top-0 left-0 w-full flex flex-col p-4 gap-4 mt-2 md:hidden text-gray-50`}>
 
           <a href="#home" className="flex items-center gap-2">
             <Home className="w-5 h-5" /> Home
