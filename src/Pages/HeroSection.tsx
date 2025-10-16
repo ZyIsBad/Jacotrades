@@ -28,7 +28,7 @@ const HeroSection = () => {
     };
       // Increase density: more points per screen area
     function createPoints() {
-      const numPoints = Math.floor((width * height) / 20000);
+      const numPoints = Math.floor((width * height) / 50000);
       points = Array.from({ length: numPoints }, () => ({
         x: Math.random() * width,
         y: Math.random() * height,
@@ -100,8 +100,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-black/70 z-10 pointer-events-none" />
 
       {/* 🔹 Foreground content */}
-      <div className="relative z-20 container mx-auto px-6 pointer-events-none flex flex-col justify-center h-full md:flex-row items-center text-center md:text-left gap-8">
-        <div className="md:w-1/2 z-10">
+        <div className="relative z-20 container mx-auto px-6 pointer-events-none flex flex-col justify-center items-center text-center h-full max-w-3xl">
           <span className="uppercase text-gray-400 tracking-wider text-sm">
             Hello World! this is JAC
           </span>
@@ -109,10 +108,10 @@ const HeroSection = () => {
             Turn Your <span className="text-[#6083fd]">Ideas into Powerful Digital Solutions</span>
           </h1>
           <p className="text-gray-400 text-base md:text-lg leading-relaxed">
-            We specialize in crafting custom software, and web that drive business success.
+            Startup and Small Business Web Development Specialist 
           </p>
         </div>
-      </div>
+
 
       {/* 🔹 Bottom “Get to Know More” text */}
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 text-center text-white align-center z-20">
