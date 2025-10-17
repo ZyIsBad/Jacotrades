@@ -4,7 +4,7 @@ import About from "./Pages/About";
 import Services from "./Pages/Services";
 import Team from "./Pages/Team";
 // import Portfolio from "./Pages/Portfolio";
-// import Projects from "./Pages/Projects";
+import Projects from "./Pages/Projects";
 import Contact from "./Pages/Contact";
 import Footer from "./Pages/Footer";
 import "./index.css";
@@ -18,8 +18,8 @@ function App() {
       <About />
       <Services />
       <Team/>
-      {/* <Portfolio />
-      <Projects/> */}
+      {/* <Portfolio /> */}
+      <Projects/>
       <Contact />
       <Footer />
     </div>
