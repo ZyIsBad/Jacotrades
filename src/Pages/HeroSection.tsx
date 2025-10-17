@@ -1,5 +1,5 @@
 "use client";
-
+import ShinyText from "../components/ShinyText";
 import { ChevronDown } from "lucide-react";
 import { BackgroundRippleEffect } from "../components/ui/background-ripple-effect";
 
@@ -23,7 +23,12 @@ const HeroSection = () => {
           Hello World! this is JAC
         </span>
         <h1 className="text-4xl md:text-5xl font-bold mt-2 mb-4 leading-tight">
-          Turn Your <span className="text-[#6083fd]">Ideas into Powerful Digital Solutions</span>
+          <ShinyText
+            text="Turn Your Ideas into Powerful Digital Solutions"
+            disabled={false}
+            speed={3}
+            className="custom-class"
+          />
         </h1>
         <p className="text-gray-400 text-base md:text-lg leading-relaxed">
           Startup and Small Business Web Development Specialist
