@@ -327,10 +327,8 @@ section {
 }
 
 .project-wrapper {
-  display: flex;
-  flex-wrap: wrap;          
-  justify-content: center;   
-  gap: 2rem;                 
+  display: flex;          
+  justify-content: center;                   
   padding-top: 2rem;
   padding-bottom: 2rem;
   max-width: 1400px;         
@@ -355,4 +353,17 @@ section {
 
 .project-card .description {
   margin-bottom: 0.75rem;
+}
+
+@media (max-width: 1025px) {
+  .project-wrapper {
+  display: flex;
+  flex-wrap: wrap;          
+  justify-content: center;   
+  gap: 2rem;                 
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  max-width: 1400px;         
+  margin: 0 auto;            
+}
 }

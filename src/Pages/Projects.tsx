@@ -21,7 +21,7 @@ const Projects = () => {
   return (
     <section className="section bg-[#030406]">
       <div className="section-header">
-        <h2 className="About-h2 text-4xl font-bold text-white">PORTFOLIO</h2>
+        <h2 className="About-h2 text-4xl font-bold text-white">PROJECTS</h2>
         <p className="About-p text-gray-300 text-lg">
           Project showcase, case studies, client work, and achievements gallery.
         </p>
