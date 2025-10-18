@@ -327,12 +327,13 @@ section {
 }
 
 .project-wrapper {
-  display: flex;          
-  justify-content: center;                   
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  max-width: 1400px;         
-  margin: 0 auto;            
+    display: grid;                            
+    grid-template-columns: repeat(4, 1fr);    
+    grid-template-rows: 1fr;                  
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin: 0 auto;    
+    justify-content: center;   
 }
 
 .project-card {
