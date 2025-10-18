@@ -354,7 +354,7 @@ section {
 .project-card .description {
   margin-bottom: 0.75rem;
 }
-
+/*  */
 @media (max-width: 1025px) {
   .project-wrapper {
   display: flex;
