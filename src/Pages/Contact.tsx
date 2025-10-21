@@ -12,6 +12,7 @@ const Contact = () => {
   });
 
   const [status, setStatus] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -25,6 +26,9 @@ const Contact = () => {
       return;
     }
 
+    setIsLoading(true);
+    setStatus("");
+
     try {
       await emailjs.send(
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
@@ -34,6 +38,7 @@ const Contact = () => {
           email: formData.email,
           subject: formData.subject,
           message: formData.message,
+          time: new Date().toLocaleString(),
           to_email: "jacotradesdevs@gmail.com",
         },
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY
@@ -43,7 +48,9 @@ const Contact = () => {
       setFormData({ name: "", email: "", subject: "", message: "" });
     } catch (error) {
       console.error("Error sending message:", error);
-      setStatus("❌ Failed to send message. Try again later.");
+      setStatus("❌ Failed to send message. Please try again later.");
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -57,7 +64,7 @@ const Contact = () => {
         <div className="flex flex-col justify-center text-left space-y-4">
           <h1 className="text-4xl md:text-5xl font-bold">Get in Touch</h1>
           <p className="text-gray-300 text-lg">
-            If you have any questions, ideas for collaboration, or just want to connect, We would be delighted to hear from you.
+            If you have any questions, ideas for collaboration, or just want to connect, we’d be delighted to hear from you.
           </p>
         </div>
 
@@ -98,11 +105,17 @@ const Contact = () => {
             onChange={handleChange}
             className="contactfill w-full px-4 py-3 rounded-lg bg-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
           ></textarea>
+
           <button
             type="submit"
-            className="contactfill w-full py-3 rounded-full bg-blue-600 text-white font-semibold hover:bg-blue-700 transition"
+            disabled={isLoading}
+            className={`contactfill w-full py-3 rounded-full font-semibold transition ${
+              isLoading
+                ? "bg-gray-500 cursor-not-allowed"
+                : "bg-blue-600 hover:bg-blue-700 text-white"
+            }`}
           >
-            Send Message
+            {isLoading ? "Sending..." : "Send Message"}
           </button>
 
           {status && (
