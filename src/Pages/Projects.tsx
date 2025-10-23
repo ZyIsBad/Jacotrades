@@ -1,6 +1,12 @@
 "use client";
 import Image from "../assets/IMAGE.png";
+import Projectone from "../assets/projectone.png";
+import Projecttwo from "../assets/projecttwo.png";
+import Projectthree from "../assets/projectthree.png";
+
+
 import { PinContainer } from "../components/ui/3d-pin";
+
 
 type Project = {
   id: number;
@@ -12,9 +18,9 @@ type Project = {
 
 export const projects: Project[] = [
   { id: 1, title: "E-commerce", description: "This project is under development.", img: Image, link: "#" },
-  { id: 2, title: "Portfolio Website", description: "A modern personal portfolio built with React and Tailwind.", img: Image, link: "#" },
-  { id: 3, title: "Portfolio Website", description: "A modern personal portfolio built with React and Tailwind.", img: Image, link: "#" },
-  { id: 4, title: "Portfolio Website", description: "A modern personal portfolio built with React and Tailwind.", img: Image, link: "#" },
+  { id: 2, title: "Portfolio Website", description: "A modern personal portfolio built with React and Tailwind.", img: Projectone, link: "#" },
+  { id: 3, title: "Portfolio Website", description: "A modern personal portfolio built with React and Tailwind.", img: Projecttwo, link: "#" },
+  { id: 4, title: "Portfolio Website", description: "A modern personal portfolio built with React and Tailwind.", img: Projectthree, link: "#" },
 ];
 
 const Projects = () => {
