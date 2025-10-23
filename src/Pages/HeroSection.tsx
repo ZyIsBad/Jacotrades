@@ -20,18 +20,18 @@ const HeroSection = () => {
       {/* 🔹 Foreground Content */}
       <div className="relative z-20 container mx-auto px-6 pointer-events-none flex flex-col justify-center items-center text-center h-full max-w-3xl">
         <span className="uppercase text-gray-400 tracking-wider text-sm">
-          Hello World! this is JAC
+          Welcome to JAC O' Trades!
         </span>
         <h1 className="text-4xl md:text-5xl font-bold mt-2 mb-4 leading-tight">
           <ShinyText
-            text="Turn Your Ideas into Powerful Digital Solutions"
+            text="WE TURN YOUR IDEAS INTO POWERFUL SOFTWARE SOLUTIONS"
             disabled={false}
             speed={3}
             className="custom-class"
           />
         </h1>
         <p className="text-gray-400 text-base md:text-lg leading-relaxed">
-          Startup and Small Business Web Development Specialist
+          We specialize in designing and developing fast, stunning, and user-friendly websites tailored to your brand.
         </p>
       </div>
 

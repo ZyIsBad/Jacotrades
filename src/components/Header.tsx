@@ -36,7 +36,7 @@ const Header = () => {
 
       {/* Hamburger Button */}
       <button
-        className="md:hidden z-50 text-white"
+        className="md:hidden z-50 text-white hover:cursor-pointer"
         onClick={toggleMenu}
       >
         {isOpen ? <X size={24} /> : <Menu size={24} />}
