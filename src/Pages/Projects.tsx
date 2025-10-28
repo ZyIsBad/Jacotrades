@@ -17,7 +17,7 @@ type Project = {
 };
 
 export const projects: Project[] = [
-  { id: 1, title: "E-commerce", description: "This project is under development.", img: Image, link: "#" },
+  // { id: 1, title: "E-commerce", description: "This project is under development.", img: Image, link: "#" },
   { id: 2, title: "Portfolio Website", description: "A modern personal portfolio built with React and Tailwind.", img: Projectone, link: "#" },
   { id: 3, title: "Portfolio Website", description: "A modern personal portfolio built with React and Tailwind.", img: Projecttwo, link: "#" },
   { id: 4, title: "Portfolio Website", description: "A modern personal portfolio built with React and Tailwind.", img: Projectthree, link: "#" },
@@ -43,7 +43,7 @@ const Projects = () => {
               <div className="description text-sm font-normal text-slate-400">
                 {project.description}
               </div>
-              <div className="flex flex-1 w-full rounded-lg overflow-hidden bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500">
+              <div className="flex flex-1 w-full rounded-lg overflow-hidden bg-gradient-to-br">
                 <img
                   src={typeof project.img === "string" ? project.img : project.img.src}
                   alt={project.title}
