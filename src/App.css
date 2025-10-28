@@ -3,11 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
+@import "@fontsource/norwester";
 /* @custom-variant dark (&:is(.dark *)); */
 
 
 .roboto {
-  font-family: "Roboto", sans-serif;
+  font-family: "Norwester", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -191,6 +192,15 @@ section {
   padding: 14px;
   margin: 20px 0px;
 
+}
+
+.brand{
+  color: #6082f9;
+  font-family: "Norwester", sans-serif;
+}
+
+.brandp {
+  font-size: 10px;
 }
 
 .info {

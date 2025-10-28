@@ -11,14 +11,25 @@ const Header = () => {
 
   return (
     <div className="Nav rounded-2xl fixed left-1/2 transform -translate-x-1/2 z-50 w-[90%] max-w-7xl bg-white/90 backdrop-blur-md shadow-md flex items-center justify-between px-6 py-3">
-      {/* Logo */}
-      <a href="#home">
-        <img
-          src={logo}
-          alt="logo"
-          className="w-[50px] h-[50px] object-cover rounded-full"
-        />
-      </a>
+      <div className="logo flex items-center gap-1">
+        {/* Logo */}
+        <a href="#home">
+          <img
+            src={logo}
+            alt="logo"
+            className="w-[50px] h-[50px] object-cover rounded-full"
+          />
+        </a>
+        <div className="display-flex text-sm font-light">
+          <p className="brand text-s leading-tight ">
+            JAC O' TRADES
+          </p>
+          <p className="brandp text-xs font-light -mt-1">
+            SOFTWARE SOLUTIONS
+          </p>
+        </div>
+      </div>
+      
       {/* Desktop Nav */}
       <div className="navlinks hidden md:flex gap-6 items-center text-sm font-medium">
         {/* <Home className="w-5 h-5 animate-none" id="home" /> */}
