@@ -85,6 +85,7 @@ body, p, span, a {
     flex-wrap: wrap;
     align-items: center;
     animation: slideIn 2s;
+    z-index: 100;
 }
 
 @keyframes slideIn {
