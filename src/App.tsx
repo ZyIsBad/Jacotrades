@@ -10,6 +10,7 @@ import Footer from "./Pages/Footer";
 import "./index.css";
 import "./App.css"
 
+
 function App() {
   return (
     <div className=" text-white w-full min-h-screen overflow-hidden">
