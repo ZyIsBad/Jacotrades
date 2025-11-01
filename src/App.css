@@ -204,6 +204,10 @@ section {
   font-size: 10px;
 }
 
+.brandname {
+  margin-top: 1px;
+}
+
 .info {
   padding: 50px;
   max-width: 100rem;

@@ -20,8 +20,8 @@ const Header = () => {
             className="w-[50px] h-[50px] object-cover rounded-full"
           />
         </a>
-        <div className="display-flex text-sm font-light">
-          <p className="brand text-s leading-tight ">
+        <div className="brandname display-flex text-sm font-light">
+          <p className="brand text-s ">
             JAC O' TRADES
           </p>
           <p className="brandp text-xs font-light -mt-1">
