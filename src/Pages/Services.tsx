@@ -44,7 +44,7 @@ const Services = () => {
   return (
     <section id="services" className="bg-[#030406] text-white py-24">
       <div className="container mx-auto px-6 text-center align-center">
-        <h2 className="About-h2 text-5xl font-extrabold mb-4">OUR SERVICES</h2>
+        <h2 className="About-h2 text-5xl font-extrabold mb-4">OUR <span>SERVICES</span></h2>
         <p className="About-p text-gray-300 mx-auto mb-12 align-center ">
           We offer end-to-end software development and digital solutions that
           align with your business goals.

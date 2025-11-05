@@ -17,7 +17,7 @@ const Header = () => {
           <img
             src={logo}
             alt="logo"
-            className="w-[50px] h-[50px] object-cover rounded-full"
+            className="w-[50px] h-[50px] object-contain"
           />
         </a>
         <div className="brandname display-flex text-sm font-light">
@@ -37,7 +37,7 @@ const Header = () => {
         <a href="#about" className="hover:underline text-black">About</a>
         <a href="#services" className="hover:underline">Services</a>
         <a href="#team" className="hover:underline">Team</a>
-        <a href="#projects" className="hover:underline text-black">Projects</a>
+        <a href="#creations" className="hover:underline text-black">Creations</a>
       </div>
 
       {/* Contact Us */}

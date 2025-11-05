@@ -1,4 +1,5 @@
 import Image from "../assets/team.jpg";
+import JACTeam from "../assets/TeamPic.jpg";
 
 const About = () => {
   return (
@@ -11,7 +12,7 @@ const About = () => {
         <div className="flex justify-center md:justify-start">
           <div className="relative w-full max-w-lg rounded-2xl overflow-hidden shadow-lg">
             <img
-              src={Image} // ← replace with your image path
+              src={JACTeam} // ← replace with your image path
               alt="About Us"
               className="w-full h-full object-cover"
             />
