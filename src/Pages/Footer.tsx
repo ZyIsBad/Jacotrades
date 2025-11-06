@@ -75,7 +75,7 @@ function Footer() {
 
       {/* COPYRIGHT */}
       <div className="border-t border-gray-800 mt-10 pt-4 text-center text-sm text-gray-500">
-        © 2030 JAC O' TRADES | SOFTWARE SOLUTIONS / ALL RIGHTS RESERVED
+        &copy; {new Date().getFullYear()} JAC O' TRADES | SOFTWARE SOLUTIONS / ALL RIGHTS RESERVED
       </div>
     </footer>
   );
